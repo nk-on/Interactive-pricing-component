@@ -1,5 +1,7 @@
 $selago:#F1F5FE;
 $white:#FFFFFF;
+$link-Water:#CFD8EF;
+$water-color:#ECF0FB;
 *{
     margin: 0;
     padding: 0;
@@ -14,7 +16,7 @@ $white:#FFFFFF;
 @mixin centerDiv(){
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
 }
 @mixin alignContainer(){
@@ -37,6 +39,7 @@ body{
 }
 
 .container {
+    width: 100%;
     @include centerContainer();
     @include setDimensions(min(80%,540px),397px);
     @include centerDiv();
@@ -51,4 +54,23 @@ body{
     #price-range{
         width: 80%;
     }
+    .billing-container{
+        position: relative;
+        width: 70%;
+        @include alignContainer();
+        .switch-button{
+            @include setDimensions(43px,22px);
+            border-radius: 15px;
+            background-color: $link-Water;
+        }
+    }
+    .line{
+        height: 3px;
+        width: 100%;
+        background-color: $link-Water;
+    }
+}
+.bottom-content{
+    width: 80%;
+    @include alignContainer();
 }

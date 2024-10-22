@@ -17,6 +17,7 @@ body {
 }
 
 .container {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -25,7 +26,6 @@ body {
   height: 397px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   z-index: 2;
   background: #FFFFFF;
@@ -39,6 +39,29 @@ body {
 }
 .container #price-range {
   width: 80%;
+}
+.container .billing-container {
+  position: relative;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .billing-container .switch-button {
+  width: 43px;
+  height: 22px;
+  border-radius: 15px;
+  background-color: #CFD8EF;
+}
+.container .line {
+  height: 3px;
+  width: 100%;
+  background-color: #CFD8EF;
+}
+
+.bottom-content {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=styles.css.map */
