@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 $selago:#F1F5FE;
 $white:#FFFFFF;
 $link-Water:#CFD8EF;
@@ -28,6 +29,7 @@ $water-color:#ECF0FB;
     height: $y;
 }
 body{
+    font-family: "Manrope", sans-serif;
     height: 100vh;
 }
 .background {
