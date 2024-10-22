@@ -23,10 +23,22 @@ body {
   transform: translate(-50%, -50%);
   width: min(80%, 540px);
   height: 397px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
   background: #FFFFFF;
   box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
   border-radius: 8px;
+}
+.container .container-header {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.container #price-range {
+  width: 80%;
 }
 
 /*# sourceMappingURL=styles.css.map */
