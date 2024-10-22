@@ -16,7 +16,7 @@ $water-color:#ECF0FB;
 @mixin centerDiv(){
     display: flex;
     flex-direction: column;
-    // justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 @mixin alignContainer(){
@@ -39,6 +39,7 @@ body{
 }
 
 .container {
+    padding: 10px 0;
     width: 100%;
     @include centerContainer();
     @include setDimensions(min(80%,540px),397px);

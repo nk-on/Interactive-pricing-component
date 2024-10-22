@@ -17,6 +17,7 @@ body {
 }
 
 .container {
+  padding: 10px 0;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -26,6 +27,7 @@ body {
   height: 397px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   z-index: 2;
   background: #FFFFFF;
