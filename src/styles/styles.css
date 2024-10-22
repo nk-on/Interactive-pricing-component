@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.background {
+  z-index: 1;
+  width: 100vw;
+  height: 449px;
+  border-radius: 0px 0px 0px 191.5px;
+  background-color: #F1F5FE;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: min(90%, 540px);
+  height: 397px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+  border-radius: 8px;
+}
+
+/*# sourceMappingURL=styles.css.map */
