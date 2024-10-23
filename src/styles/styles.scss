@@ -9,6 +9,8 @@ $clr-text-orange: #FF8D68;
 $clr-purple:#293356;
 $clr-light-purple:#BECDFF;
 $white:#FFFFFF;
+$clr-light-green:#A4F3EB;
+
 * {
     margin: 0;
     padding: 0;
@@ -73,6 +75,10 @@ body {
     background: $white;
     box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
     border-radius: 8px;
+    #price-range{
+        accent-color: $clr-light-green;
+        border: none;    
+    }
 
     .container-header {
         @include alignContainer();
