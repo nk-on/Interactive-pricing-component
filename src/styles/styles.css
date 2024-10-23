@@ -85,8 +85,27 @@ body {
 .container .billing-container .switch-button {
   width: 43px;
   height: 22px;
+  cursor: pointer;
   border-radius: 15px;
   background-color: #CFD8EF;
+  padding: 1px 1px;
+}
+.container .billing-container .switch-button .toogle {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+.container .billing-container .Monthly-blling-container {
+  color: #848EAD;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  text-transform: none;
 }
 .container .line {
   height: 3px;
