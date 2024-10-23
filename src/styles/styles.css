@@ -136,6 +136,13 @@ body {
   display: flex;
   gap: 10px;
   list-style: none;
+  color: #848EAD;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-transform: none;
 }
 .bottom-content button {
   background-color: #293356;
