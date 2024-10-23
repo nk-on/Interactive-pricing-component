@@ -137,5 +137,19 @@ body {
   gap: 10px;
   list-style: none;
 }
+.bottom-content button {
+  background-color: #293356;
+  color: #BECDFF;
+  border-radius: 20.5px;
+  font-style: "normal";
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  text-transform: none;
+  width: 170px;
+  height: 41px;
+}
 
 /*# sourceMappingURL=styles.css.map */

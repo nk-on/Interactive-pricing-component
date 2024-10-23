@@ -6,6 +6,8 @@ $color-gray: #848EAD;
 $clr-dark: #293356;
 $clr-orange:#FEEDE8;
 $clr-text-orange: #FF8D68;
+$clr-purple:#293356;
+$clr-light-purple:#BECDFF;
 $white:#FFFFFF;
 * {
     margin: 0;
@@ -146,5 +148,12 @@ body {
             gap: 10px;
             list-style: none;
         }
+    }
+    button{
+        background-color: $clr-dark;
+        color: $clr-light-purple;
+        border-radius: 20.5px;
+        @include textStyle( 'normal', 800, 12px, 16px, center, 0, none);
+        @include setDimensions(170px,41px);
     }
 }
