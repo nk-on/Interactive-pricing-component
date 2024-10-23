@@ -140,4 +140,11 @@ body {
 .bottom-content {
     width: 80%;
     @include alignContainer();
+    .list{
+        ul li{
+            display: flex;
+            gap: 10px;
+            list-style: none;
+        }
+    }
 }
