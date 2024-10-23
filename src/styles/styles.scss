@@ -1,41 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-$selago:#F1F5FE;
-$white:#FFFFFF;
-$link-Water:#CFD8EF;
-$water-color:#ECF0FB;
-*{
+$selago: #F1F5FE;
+$white: #FFFFFF;
+$link-Water: #CFD8EF;
+$water-color: #ECF0FB;
+$color-gray: #848EAD;
+$clr-dark: #293356;
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-@mixin centerContainer(){
+
+@mixin centerContainer() {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-@mixin centerDiv(){
+
+@mixin centerDiv() {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-@mixin alignContainer(){
+
+@mixin alignContainer() {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-@mixin setDimensions($x,$y){
+
+@mixin setDimensions($x, $y) {
     width: $x;
     height: $y;
 }
-body{
+
+@mixin textStyle($fontStyle, $fontWeight, $fontSize, $lineHeight, $textAlign, $letterSpacing, $textTransform) {
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    text-align: $textAlign;
+    letter-spacing: $letterSpacing;
+    text-transform: $textTransform;
+}
+
+body {
     font-family: "Manrope", sans-serif;
     height: 100vh;
 }
+
 .background {
     z-index: 1;
     // position: absolute;
-    @include setDimensions(100vw,449px);
+    @include setDimensions(100vw, 449px);
     border-radius: 0px 0px 0px 191.5px;
     background-color: $selago;
 }
@@ -44,36 +64,59 @@ body{
     padding: 10px 0;
     width: 100%;
     @include centerContainer();
-    @include setDimensions(min(80%,540px),397px);
+    @include setDimensions(min(80%, 540px), 397px);
     @include centerDiv();
     z-index: 2;
-    background:$white;
+    background: $white;
     box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
     border-radius: 8px;
-    .container-header{
+
+    .container-header {
         @include alignContainer();
         width: 90%;
+
+        .views-count-container {
+            color: $color-gray;
+            @include textStyle(normal, 800, 14px, 19px, center, 2px, uppercase);
+        }
+
+        .price-container {
+            @include textStyle(normal, 800, 40px, 55px, right, -1px, none);
+
+
+            span {
+                color: $color-gray;
+                @include textStyle(normal, 600, 16px, 22px, center, 0, none);
+            }
+
+        }
     }
-    #price-range{
+
+    #price-range {
         width: 80%;
     }
-    .billing-container{
+
+    .billing-container {
         position: relative;
         width: 70%;
+        height: 40%;
         @include alignContainer();
-        .switch-button{
-            @include setDimensions(43px,22px);
+
+        .switch-button {
+            @include setDimensions(43px, 22px);
             border-radius: 15px;
             background-color: $link-Water;
         }
     }
-    .line{
+
+    .line {
         height: 3px;
         width: 100%;
         background-color: $link-Water;
     }
 }
-.bottom-content{
+
+.bottom-content {
     width: 80%;
     @include alignContainer();
 }

@@ -39,7 +39,37 @@ body {
 .container .container-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 90%;
+}
+.container .container-header .views-count-container {
+  color: #848EAD;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.container .container-header .price-container {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 55px;
+  text-align: right;
+  letter-spacing: -1px;
+  text-transform: none;
+}
+.container .container-header .price-container span {
+  color: #848EAD;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0;
+  text-transform: none;
 }
 .container #price-range {
   width: 80%;
@@ -47,8 +77,10 @@ body {
 .container .billing-container {
   position: relative;
   width: 70%;
+  height: 40%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .container .billing-container .switch-button {
   width: 43px;
@@ -66,6 +98,7 @@ body {
   width: 80%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
