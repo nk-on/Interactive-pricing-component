@@ -4,13 +4,14 @@ $link-Water: #CFD8EF;
 $water-color: #ECF0FB;
 $color-gray: #848EAD;
 $clr-dark: #293356;
-$clr-orange:#FEEDE8;
+$clr-orange: #FEEDE8;
 $clr-text-orange: #FF8D68;
-$clr-purple:#293356;
-$clr-light-purple:#BECDFF;
-$white:#FFFFFF;
-$clr-light-green:#A4F3EB;
-
+$clr-purple: #293356;
+$clr-light-purple: #BECDFF;
+$clr-price-range: #ECF0FB;
+$white: #FFFFFF;
+$clr-light-green: #A4F3EB;
+$clr-color-green: #10D8C4;
 * {
     margin: 0;
     padding: 0;
@@ -75,9 +76,25 @@ body {
     background: $white;
     box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
     border-radius: 8px;
-    #price-range{
-        accent-color: $clr-light-green;
-        border: none;    
+
+    #price-range {
+        -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+        cursor: pointer;
+        width: 15rem;
+        background-color: $clr-price-range;
+        border-radius: 5px;
+        height: 8px;
+    }
+
+    #price-range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        @include setDimensions(40px,40px);
+        background-color: $clr-color-green;
+        border-radius: 50%;
+        box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
     }
 
     .container-header {
@@ -117,20 +134,23 @@ body {
             border-radius: 15px;
             background-color: $link-Water;
             padding: 1px 1px;
-            .toogle{
+
+            .toogle {
                 display: block;
-                @include setDimensions(20px,20px);
+                @include setDimensions(20px, 20px);
                 background-color: $white;
                 border-radius: 50%;
             }
         }
-            
-        .Monthly-blling-container,.Yearly-billing-container{
-            color:$color-gray;
+
+        .Monthly-blling-container,
+        .Yearly-billing-container {
+            color: $color-gray;
             @include textStyle(normal, 600, 12px, 16px, center, 0, none);
         }
-        .discount{
-            background-color:$clr-orange;
+
+        .discount {
+            background-color: $clr-orange;
             color: $clr-text-orange;
             padding: 10px;
             @include textStyle(normal, 800, 10px, 14px, center, 0, none);
@@ -148,8 +168,9 @@ body {
 .bottom-content {
     width: 80%;
     @include alignContainer();
-    .list{
-        ul li{
+
+    .list {
+        ul li {
             display: flex;
             gap: 10px;
             list-style: none;
@@ -157,11 +178,12 @@ body {
             @include textStyle(normal, 600, 12px, 16px, null, 0, none);
         }
     }
-    button{
+
+    button {
         background-color: $clr-dark;
         color: $clr-light-purple;
         border-radius: 20.5px;
-        @include textStyle( 'normal', 800, 12px, 16px, center, 0, none);
-        @include setDimensions(170px,41px);
+        @include textStyle('normal', 800, 12px, 16px, center, 0, none);
+        @include setDimensions(170px, 41px);
     }
 }
