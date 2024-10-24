@@ -12,6 +12,7 @@ $clr-price-range: #ECF0FB;
 $white: #FFFFFF;
 $clr-light-green: #A4F3EB;
 $clr-color-green: #10D8C4;
+$clr-cyan: #7AEADF;
 * {
     margin: 0;
     padding: 0;
@@ -146,6 +147,9 @@ body {
                 background-color: $white;
                 border-radius: 50%;
             }
+        }
+        .switch-button:hover{
+            background-color: $clr-color-green;
         }
 
         .Monthly-blling-container,

@@ -122,6 +122,9 @@ body {
   background-color: #FFFFFF;
   border-radius: 50%;
 }
+.container .billing-container .switch-button:hover {
+  background-color: #10D8C4;
+}
 .container .billing-container .Monthly-blling-container,
 .container .billing-container .Yearly-billing-container {
   color: #848EAD;
