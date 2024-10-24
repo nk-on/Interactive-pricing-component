@@ -12,4 +12,13 @@ const viewUnits = ['10K','50K','100K','500K','1M']
 priceRange.addEventListener('input',()=>{
   priceContainer.textContent = priceUnits[priceRange.value];
   viewCountCont.textContent = `${viewUnits[priceRange.value]} `;
+});
+toogle.addEventListener('click',()=>{
+  if(switchButton.classList.contains('toogle-unswitched')){
+    switchButton.classList.remove('toogle-unswitched');
+    switchButton.classList.add('toogle-switched');
+  }else{
+    switchButton.classList.remove('toogle-switched');
+    switchButton.classList.add('toogle-unswitched');
+  }
 })

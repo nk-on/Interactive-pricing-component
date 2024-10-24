@@ -107,10 +107,11 @@ body {
         }
 
         .price-container {
-            @include textStyle(normal, 800, 40px, 55px, right, -1px, none);
+            color: $color-gray;
+            @include textStyle(normal, 600, 10px, 16px, center, 0, none);
 
 
-            span {
+            .view-container{
                 color: $color-gray;
                 @include textStyle(normal, 600, 16px, 22px, center, 0, none);
             }
@@ -127,13 +128,17 @@ body {
         width: 70%;
         height: 40%;
         @include alignContainer();
-
+        .toogle-switched{
+            padding: 1px 21px;
+        }
+        .toogle-unswitched{
+            padding: 1px 1px;
+        }
         .switch-button {
             @include setDimensions(43px, 22px);
             cursor: pointer;
             border-radius: 15px;
             background-color: $link-Water;
-            padding: 1px 1px;
 
             .toogle {
                 display: block;
