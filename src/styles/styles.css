@@ -188,4 +188,11 @@ body {
   height: 41px;
 }
 
+@media only screen and (max-width: 600px) {
+  .bottom-content {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

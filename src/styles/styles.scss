@@ -13,6 +13,7 @@ $white: #FFFFFF;
 $clr-light-green: #A4F3EB;
 $clr-color-green: #10D8C4;
 $clr-cyan: #7AEADF;
+
 * {
     margin: 0;
     padding: 0;
@@ -92,7 +93,7 @@ body {
     #price-range::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
-        @include setDimensions(40px,40px);
+        @include setDimensions(40px, 40px);
         background-color: $clr-color-green;
         border-radius: 50%;
         box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
@@ -112,7 +113,7 @@ body {
             @include textStyle(normal, 600, 10px, 16px, center, 0, none);
 
 
-            .view-container{
+            .view-container {
                 color: $color-gray;
                 @include textStyle(normal, 600, 16px, 22px, center, 0, none);
             }
@@ -129,12 +130,15 @@ body {
         width: 70%;
         height: 40%;
         @include alignContainer();
-        .toogle-switched{
+
+        .toogle-switched {
             padding: 1px 21px;
         }
-        .toogle-unswitched{
+
+        .toogle-unswitched {
             padding: 1px 1px;
         }
+
         .switch-button {
             @include setDimensions(43px, 22px);
             cursor: pointer;
@@ -148,7 +152,8 @@ body {
                 border-radius: 50%;
             }
         }
-        .switch-button:hover{
+
+        .switch-button:hover {
             background-color: $clr-color-green;
         }
 
@@ -194,5 +199,12 @@ body {
         border-radius: 20.5px;
         @include textStyle('normal', 800, 12px, 16px, center, 0, none);
         @include setDimensions(170px, 41px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bottom-content{
+        flex-direction: column;
+        gap:5px;
     }
 }
