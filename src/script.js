@@ -7,5 +7,9 @@ const priceContainer = document.querySelector('[data-price-container]')
 const yearlyBillingContainer = document.querySelector('[data-yearly-billing]');
 const switchButton = document.querySelector('[data-switch]');
 const toogle = document.querySelector('[ data-toogle]');
-let initialPrice = 8;
-let initialViewCount = 10;
+const priceUnits = [8,12,16,24,36];
+const viewUnits = ['10K','50K','100K','500K','1M']
+priceRange.addEventListener('input',()=>{
+  priceContainer.textContent = priceUnits[priceRange.value];
+  viewCountCont.textContent = `${viewUnits[priceRange.value]} `;
+})
