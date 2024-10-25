@@ -160,6 +160,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 40px 0;
 }
 .bottom-content .list ul li {
   display: flex;
@@ -177,6 +178,7 @@ body {
   background-color: #293356;
   color: #BECDFF;
   border-radius: 20.5px;
+  border: none;
   font-style: "normal";
   font-weight: 800;
   font-size: 12px;
