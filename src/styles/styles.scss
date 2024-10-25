@@ -60,6 +60,23 @@ body {
     height: 100vh;
 }
 
+.heading-text {
+    z-index: 3;
+    position: absolute;
+    left: 35%;
+    top:10%;
+    text-align: center;
+    h1{
+        @include textStyle(normal, 800, 28px, 38px, null, 0, none);
+        color:$clr-purple;
+
+    }
+    h2{
+        @include textStyle(normal, 600, 15px, 20px, null, 0, none);
+        color:$color-gray;
+    }
+}
+
 .background {
     z-index: 1;
     // position: absolute;
@@ -111,7 +128,8 @@ body {
         .price-container {
             color: $color-gray;
             @include textStyle(normal, 600, 16px, 22px, center, 0, none);
-            .price-placeholder{
+
+            .price-placeholder {
                 @include textStyle(normal, 800, 40px, 55px, right, -1px, none);
                 color: $clr-dark;
             }
@@ -181,6 +199,7 @@ body {
     width: 80%;
     @include alignContainer();
     padding: 40px 0;
+
     .list {
         ul li {
             display: flex;
@@ -202,8 +221,8 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .bottom-content{
+    .bottom-content {
         flex-direction: column;
-        gap:5px;
+        gap: 5px;
     }
 }

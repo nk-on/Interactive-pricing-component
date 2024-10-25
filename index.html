@@ -10,13 +10,21 @@
 </head>
 
 <body>
+    <div class="heading-text">
+        <!-- <svg width="146" height="145" viewBox="0 0 146 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="63" cy="82" r="62.5" stroke="#CFD8EF"/>
+            <circle cx="105" cy="41" r="40.5" stroke="#CFD8EF"/>
+        </svg>             -->
+        <h1>Simple, traffic-based pricing</h1>
+        <h2>Sign-up for our 30-day trial. No credit card required</h2>
+    </div>
     <div class="background"></div>
     <main class="container">
         <div class="container-header">
             <h3 class='views-count-container'><span data-view-count-container>10K </span class = 'view-container'>views</h3>
-            <h1 class='price-container'><span data-price-container>8.00</span>$ /month</h1>
+            <h1 class='price-container'><span data-price-container class="price-placeholder">$8.00</span>/month</h1>
         </div>
-        <input type="range" name="price-range" id="price-range" min="0" max="4">
+        <input type="range" name="price-range" id="price-range" min="0" max="4" value="0">
         <div class="billing-container">
             <h5 class="Monthly-blling-container" data-monthly-billing>Monthly Billing</h5>
             <div class="switch-button toogle-unswitched" data-switch><span class="toogle" data-toogle></span></div>
